@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 COPY local_tag_emb_index /app/local_tag_emb_index
 # Install any needed packages specified in requirements.txt
-RUN pip install --no-cache-dir flask pandas torch transformers
+RUN pip install --no-cache-dir flask pandas torch transformers pyarrow
 
 # Make port 80 available to the world outside this container
 EXPOSE 80
